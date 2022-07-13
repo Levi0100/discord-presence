@@ -7,7 +7,7 @@ npm i discord-rpc
 import {Client} from 'discord-rpc'
 const client = new Client({transport: 'ipc' /*or 'websocket'*/});
 client.on('ready', () => {
-    console.log('Logged'.green);
+    console.log('Logged');
     client.request('SET_ACTIVITY', {
         pid: process.pid,
         activity: {
